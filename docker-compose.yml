@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
     # image project
     laravel_8:
@@ -41,7 +41,7 @@ services:
             MYSQL_PASSWORD: ${DB_PASSWORD}
             MYSQL_USER: ${DB_USERNAME}
         volumes: 
-            - ./.docker/mysql/dbdata:/var/lib/mysql
+            - P:\docker/mysql/dbdata:/var/lib/mysql
         ports: 
             - 3388:3306
         networks: 
